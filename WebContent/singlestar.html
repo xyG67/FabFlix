@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Single Star</title>
+	<link rel = "Stylesheet" type ="text/css" href = "css/Stylesheet.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/Basic.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/table.css">
+</head>
+<body>
+<div class = "container">
+	<div class = "Header-wrap">
+		<div class = "Hearder-primary">
+			<div class = "HeaderLogo">
+				<a></a>
+			</div>
+			<div class = "search">
+				<div class = "Input">
+					<input type = "text" name = "search" size="22" placeholder="search" maxlength="60">
+				</div>
+				<div class = "searchBtn">
+					<input type = submit value = search />
+				</div>
+			</div>
+		</div>
+		<div class = "Bar">
+			<ul>
+				<li><a href = "mainpage.html">Home</a></li>
+
+				<li><a href="adsearch.html">Search</a></li>
+
+				<li><a href = "shoppingchart.html">Check Out</a></li>
+
+				<li><a href = "login.html">Sign Out</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id = "Body">
+		<div class = "wrap-table">
+		<table id= searching_result class="table" align = "center">
+				<tr class = "row header">
+					<td class = "cell"></td>
+					<td class = "cell" colspan = 4></td>
+				</tr>
+				<tr class = "row">
+						<td class = "cell">Title</td>
+						<td class = "cell">Year</td>
+						<td class = "cell">Director</td>
+				</tr>
+	
+			<tbody id = single_star_movie>
+			</tbody >
+		</table>
+		</div>
+	</div>
+</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- include our own JS file -->
+	<script type="text/javascript" src="js/singleStar.js"></script>
+</body>
+</html>

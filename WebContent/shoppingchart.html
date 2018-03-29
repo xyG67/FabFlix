@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel = "Stylesheet" type ="text/css" href = "css/Stylesheet.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/Basic.css">
+	<link rel="stylesheet" type="text/css" href="buttons/shoppingcartButton.css" />
+</head>
+<body>
+<div class = "container">
+	<div class = "Header-wrap">
+		<div class = "Hearder-primary">
+			<div class = "HeaderLogo">
+				<a></a>
+			</div>
+			<div class = "search">
+				<div class = "Input">
+					<input type = "text" name = "search" size="22" placeholder="search" maxlength="60">
+				</div>
+				<div class = "searchBtn">
+					<input type = submit value = search />
+				</div>
+			</div>
+		</div>
+		<div class = "Bar">
+			<ul>
+				<li><a href = "mainpage.html">Home</a></li>
+
+				<li><a href="adsearch.html">Search</a></li>
+
+				<li><a href = "shoppingchart.html">Check Out</a></li>
+
+				<li><a href = "login.html">Sign Out</a></li>
+			</ul>
+		</div>
+	</div>		
+	
+	
+	<div id = shopping_history>
+		
+	</div>
+	<input type = button class = shoppingbutton id = checkOut value = "checkOut" onClick = jump()>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- include our own JS file -->
+	<script type="text/javascript" src="js/shoppingchart.js"></script>
+
+</body>
+</html>

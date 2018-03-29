@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to FabFlix!</title>
+	<link rel = "Stylesheet" type ="text/css" href = "css/Stylesheet.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/Basic.css">
+	<link rel="stylesheet" type="text/css" href="buttons/buttons.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+</head>
+<body>
+<div class = "container">
+	<div class = "Header-wrap">
+		<div class = "Hearder-primary">
+			<div class = "HeaderLogo">
+			</div>
+			<div class = "search">
+				<div class = "Input">
+					<input type = "text" id = "autocomplete"  name = "hero" size="22" placeholder="search" value = "" maxlength="60">
+				</div>
+				<div class = "searchBtn">
+					<input type="button" value="Search" onClick = searchButton()>
+				</div>
+			</div>
+		</div>
+		<div class = "Bar">
+			<ul>
+				<li><a href = "mainpage.html">Home</a></li>
+				<li><a href="adsearch.html">Search</a></li>
+				<li><a href = "shoppingchart.html">Check Out</a></li>
+				<li><a href = "login.html">Sign Out</a></li>
+			</ul>
+		</div>
+	</div>		
+
+	<div id = container_body>
+		<div id= gener_table_body></div>
+		<br>	
+		<div id= search_by_name></div>
+	</div>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- include our own JS file -->
+	<script type="text/javascript" src="js/mainpage.js"></script>
+	<script type="text/javascript" src = "js/searchQ.js"></script>
+	
+</body>
+</html>

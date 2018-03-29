@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Like Predicate</title>
+</head>
+<body>
+Report of Like Predicate.<br><br><br>
+
+We used the prepared statement for searching function when there can be multiple possible null conditions. <br>
+In the query, we use "movies.title = ? or ? is null <br>
+this is the case the title should match exactly. <br><br>
+We replace the condition with movies.title like CONCAT('%', ?, '%') or ? = '' <br>
+and the same goes for movie director and actor name.<br>
+So that title director and star supports substring matching.<br>
+In this case, as long as the string contains the keyword, the result will be displayed.<br>
+
+</body>
+</html>

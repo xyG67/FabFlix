@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Advanced Title Search</title>
+
+<link rel = "Stylesheet" type ="text/css" href = "css/Stylesheet.css">
+
+<link rel = "Stylesheet" type ="text/css" href = "css/Basic.css">
+
+</head>
+
+
+
+
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- include our own JS file -->
+	<script type="text/javascript" src="js/adSearch.js"></script>
+
+<div class = "container">
+	<div class = "Header-wrap">
+
+		<div class = "Hearder-primary">
+
+			<div class = "HeaderLogo">
+
+				<a></a>
+
+			</div>
+
+			<div class = "search">
+
+				<div class = "Input">
+
+					<input type = "text" name = "search" size="22" placeholder="search" maxlength="60">
+
+				</div>
+
+				<div class = "searchBtn">
+
+					<input type = submit value = search />
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "Bar">
+
+			<ul>
+
+				<li><a href = "mainpage.html">Home</a></li>
+
+				<li><a href="adsearch.html">Search</a></li>
+
+				<li><a href = "shoppingchart.html">Shopping Cart</a></li>
+
+				<li><a href = "login.html">Sign Out</a></li>
+
+			</ul>
+
+		</div>
+
+	</div>	
+
+
+			<form method="get" action="FindMovie">
+
+				Title: <input id = title name="title" type="text"><br>
+
+				Year:<input id = year name="year" type="text"><br>
+
+				Director:<input id = director name="director" type="text"><br>
+
+				Star:<input id = star name="star" type="text"><br>
+
+    			<input type="button" value="Search" onClick = adSearch2()>
+
+			</form>
+			
+	<a href="likePredicate.html">Like Predicate</a>
+</div>			
+
+
+
+
+</body>
+</html>

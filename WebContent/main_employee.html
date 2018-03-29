@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+</head>
+
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<nav class="nav-extended">
+   	 	<div class="nav-content">
+      		<span class="nav-title"> Welcome! Please edit data here!</span>
+    	</div>
+  	</nav>
+  
+   <div class="row">
+   	<div class="col s4">
+		<table id= show_result>	
+		
+       	
+		</table>
+	</div>
+	<div class="col s3">
+	<form>
+		star name: <input type = text id = "star_name">
+		birth year: <input type = text id = "birth_year">
+		<input type = button value = "add a new star" name = test onclick=add_new_star()>
+	</form>
+	</div>
+	<div class="col s3">
+	<form>
+		title: <input type = text id = "movie_title">
+		year: <input type = text id = "movie_year">
+		director: <input type = text id = "movie_director">
+		star: <input type = text id = "movie_star">
+		genre: <input type = text id = "movie_genre">
+		<input type = button value = "add a new movie" name = movieNew onclick=add_new_movie()>
+	</form>
+	</div>
+	<div class="col s2">
+	<form>
+		<input type = button value = "Metadata" onclick=show_metadata()>
+		<input type = button value = "actors63" id = 1 onclick = parseHandler(this.id)>
+		<input type = button value = "casts124" id = 2 onclick = parseHandler(this.id)>
+		<input type = button value = "mains243" id = 3 onclick = parseHandler(this.id)>
+		
+	</form>
+	
+	</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- include our own JS file -->
+	<script type="text/javascript" src="js/main_employee.js"></script>
+</body>
+</html>

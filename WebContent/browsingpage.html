@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Browse</title>
+	<link rel = "Stylesheet" type ="text/css" href = "css/Stylesheet.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/Basic.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/table.css">
+	<link rel="stylesheet" type="text/css" href="buttons/buttons.css" />
+</head>
+<body>
+<div class = container>
+	<div class = "Header-wrap">
+		<div class = "Hearder-primary">
+			<div class = "HeaderLogo">
+				<a></a>
+			</div>
+			<div class = "search">
+				<div class = "Input">
+					<input type = "text" name = "search" size="22" placeholder="search" maxlength="60">
+				</div>
+				<div class = "searchBtn">
+					<input type = submit value = search />
+				</div>
+			</div>
+		</div>
+		<div class = "Bar">
+			<ul>
+				<li><a href = "mainpage.html">Home</a></li>
+
+				<li><a href="adsearch.html">Search</a></li>
+
+				<li><a href = "shoppingchart.html">Check Out</a></li>
+
+				<li><a href = "login.html">Sign Out</a></li>
+			</ul>
+		</div>
+	</div>		
+	<div id = "Body">
+		<div class = "wrap-table">
+			
+			<table id=searching_result class="table" align = "center">
+				<tr  class = "row header">
+					<td class = "cell"></td>
+					<td class = "cell" colspan = 6></td>
+				</tr>
+				<tr class = "row">
+					<td><input type = button class = "button small gray" id = prev name = prev value = prev onClick = prevPage()></td>
+					<td><input type = button class = "button small gray" id = next name = next value = next onClick = nextPage()></td>
+					<td><input type = text id = numberOnePage name = numberOnePage placeholder = "per page" width = 50px></td>
+					<td><input type = button class = "button small gray" id = submitPageNum name = submitPageNum value = change! onClick = changePage()></td>
+					<td><input type = button class = "button small gray" id = sortOnTitle name = sortOnTitle value = sortOnTitle onClick = sortByTitle()></td>
+					<td><input type = button class = "button small gray" id = sortOnYear name = sortOnYear value = sortOnYear onClick = sortByYear()></td>
+				</tr>
+				<tr class = "row">
+						<td class = "cell">Title</td>
+						<td class = "cell">Year</td>
+						<td class = "cell">Director</td>
+						<td class = "cell">Genre</td>
+						<td class = "cell">Star</td><td></td>
+				</tr>
+			<tbody id= search_movie_result>
+				
+			</tbody>
+			</table>
+		</div>
+	</div>
+</div>		
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- include our own JS file -->
+	<script type="text/javascript" src="js/browsing.js"></script>
+	
+</body>
+</html>

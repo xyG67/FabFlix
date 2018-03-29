@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment</title>
+	<link rel = "Stylesheet" type ="text/css" href = "css/Stylesheet.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/Basic.css">
+	<link rel = "Stylesheet" type ="text/css" href = "css/login.css"> 
+</head>
+
+<body>
+<div class = "container">
+	<div class = "Header-wrap">
+		<div class = "Hearder-primary">
+			<div class = "HeaderLogo">
+				<a></a>
+			</div>
+			<div class = "search">
+				<div class = "Input">
+					<input type = "text" name = "search" size="22" placeholder="search" maxlength="60">
+				</div>
+				<div class = "searchBtn">
+					<input type = submit value = search />
+				</div>
+			</div>
+		</div>
+		<div class = "Bar">
+			<ul>
+				<li><a href = "mainpage.html">Home</a></li>
+
+				<li><a href="adsearch.html">Search</a></li>
+
+				<li><a href = "shoppingchart.html">Shopping Cart</a></li>
+
+				<li><a href = "login.html">Sign Out</a></li>
+			</ul>
+		</div>
+	</div>	
+
+
+<h2>Make Payment</h2>
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><font size="6">Check Out</font></button>
+
+<div id="id01" class="modal">
+  
+  <form id="payinfo_form" class="modal-content animate" method="post" action="#">
+   	 <div class="imgcontainer">
+     	 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+     </div> 
+
+     <div class="container">
+    	  <label><b>First Name</b></label>
+     	  <input type="text" placeholder="Enter First Name" name="fname" required>
+
+      	  <label><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="lname" required>
+          
+          <label><b>Credit Number</b></label>
+          <input type="text" placeholder="Enter Credit Number" name="id" required>
+          
+          <label><b>Expiration Date</b></label>
+          <input type="text" placeholder="Enter Expiration Date YYYY-MM-DD" name="expiration" required>
+       
+          <div id="payinfo_error_message"></div>
+        
+          <button type="submit" >Check out</button> 
+          <label><input type="checkbox" checked="checked">Remember me</label>
+    </div>
+
+     <div class="container" style="background-color:#f1f1f1">
+     	  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+     	  <span class="psw">Forgot <a href="#">password?</a></span>
+     </div>
+  </form>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<!-- include jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- include our own JS file -->
+	<script src="js/payinfo.js"></script>
+
+
+</body>
+</html>

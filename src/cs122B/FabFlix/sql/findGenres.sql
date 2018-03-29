@@ -1,0 +1,1 @@
+SELECT genres.name FROM moviedb.genres;

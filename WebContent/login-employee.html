@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Administration Login</title>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	
+	<H1 ALIGN="CENTER">Tomcat Test reCAPTCHA</H1>
+
+	<FORM ACTION="RechapchaServlet" METHOD = POST>
+		Email: <INPUT TYPE="TEXT" NAME="name"> (Use % to replace any strings. e.g. Eddie%)<BR> 
+		Password: <INPUT TYPE="PASSWORD" NAME="password"><BR>
+		<CENTER>
+			<INPUT TYPE="SUBMIT" VALUE="Submit Order">
+		</CENTER>
+		<div class="g-recaptcha" data-sitekey="6LdjHUcUAAAAAPhXW8CWmkStB5iNWvnatnMr3n1v"></div>
+	</FORM>
+	
+</body>
+</html>

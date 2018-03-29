@@ -1,0 +1,138 @@
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 10px;
+	color: #000;
+	background-color: #E9E9E9;
+}
+
+.container{
+	width: 80%;
+	max-width: 1000px;
+	min-width: 780px;
+	margin: 0px auto; 
+}
+	
+.Header-wrap{ /*-----wrap----*/
+	border-bottom: 1px solid #9CF;
+	background-image:url(../images//FabFlixB.png);
+}
+.Hearder-primary{/*-----logo + search----*/
+	height:100px;
+}
+.HeaderLogo{/*-----Logo: backgroud and link to homepage----*/
+	float:left;
+	height:56px;
+	width:350px;
+	margin:10px 13px 0 0;
+	padding-bottom: 20px;
+}
+.search{/*-----inp + btn----*/
+	margin-left:350px;
+	margin-top:75px;
+	overflow:visible;
+	position:relative;
+	zoom:1;
+	padding:30px 0 15px 0;
+}
+
+.search input{
+	border:none;
+	background:transparent;
+	padding-top:10px;
+	box-sizing: border-box;
+}
+.search .Input input{
+	background:#fff;
+	width:70%;
+	margin:0;
+	text-align:left;
+	padding-left:10px;
+	height:40px;
+	line-height:28px;
+	outline:none;
+}
+.searchBtn{/*-----search button: picture and link----*/
+	position:relative;
+	left:-1px;
+	width:45px;
+	height:45px;
+	overflow:hidden;
+}
+
+.search .searchBtn input{
+	width:80%;
+	height:80%;
+	padding:35px 0 0 0;
+	overflow:hidden;
+	cursor:pointer;
+	background-image:url(../images//SearchIcon.png);
+}
+
+.Bar{
+	height:30px;
+	margin-left:200px;
+}
+
+.Bar ul{
+	width:80%;
+	height:auto;
+	text-align:center;
+	list-style-type:none;
+}
+
+.Bar ul li{
+	float:left; 
+	text-decoration: none;
+}
+
+.Bar li{
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.Bar li:hover{
+	background-color:white;
+}
+
+
+#container_body{
+	color:#eee;
+	background:url('../img/page_bg.jpg') repeat-x #f3f3f3;
+	font:15px Calibri,Arial,sans-serif;
+	border-top:5px solid #212121;
+}
+
+#gener_table_body{
+	background:url('../img/section_bg.png');
+	border:1px solid #F4F4F4;
+	margin:20px auto 0;
+	overflow:hidden;
+	
+	padding:10px 0 15px 25px;
+	width:800px;
+	
+	-moz-box-shadow:0 0 10px #C4C4C4;
+	-webkit-box-shadow:0 0 10px #C4C4C4;
+	box-shadow:0 0 10px #C4C4C4;
+}
+
+#gener_table_body input{
+	float:left;
+	margin:15px 15px 0 0;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #ffff80; }
+.autocomplete-suggestions strong { 
+	font-weight: normal; 
+	color: #3399FF; 
+	}
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+#Footer{
+		padding: 10px 0;
+}
+

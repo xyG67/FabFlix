@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>CS122B</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>login.htm</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <resource-ref>
+    <description>TestDB</description>
+    <res-ref-name>jdbc/TestDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+   <resource-ref>
+      <description>MASTERDB Connection</description>
+      <res-ref-name>jdbc/Master</res-ref-name>
+      <res-type>javax.sql.DataSource</res-type>
+      <res-auth>Container</res-auth>
+   </resource-ref>
+
+   <resource-ref>
+    	 <description>emptyDB</description>
+		<res-ref-name>jdbc/EmpDB</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+  
+  <servlet>
+    <servlet-name>TomcatTestServlet</servlet-name>
+    <servlet-class>TomcatTest</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>TomcatTestServlet</servlet-name>
+    <url-pattern>/servlet/TomcatTest</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
